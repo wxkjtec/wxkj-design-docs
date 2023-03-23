@@ -1,2 +1,2 @@
-# wxkj-design-docs
-wxkj-design组件库文档
+# wx-design-docs
+wx-design组件库文档

@@ -1,0 +1,38 @@
+{
+  "name": "wx-design-docs",
+  "version": "1.0.0",
+  "description": "wx-design组件库文档",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dm-China/wx-design-docs.git"
+  },
+  "keywords": [
+    "element ui",
+    "vue",
+    "design"
+  ],
+  "author": {
+    "name": "dmhb",
+    "email": "189838678@qq.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dm-China/wx-design-docs/issues"
+  },
+  "homepage": "https://github.com/Dm-China/wx-design-docs#readme",
+  "dependencies": {
+    "echarts": "^5.4.1",
+    "element-ui": "^2.15.13",
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "wx-design": "^0.1.7"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
