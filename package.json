@@ -6,11 +6,12 @@
   "scripts": {
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "release": "bumpp --commit --push --tag"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dm-China/wx-design-docs.git"
+    "url": "git+https://github.com/wxkjtec/wxkj-design-docs.git"
   },
   "keywords": [
     "element ui",
@@ -23,16 +24,17 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dm-China/wx-design-docs/issues"
+    "url": "https://github.com/wxkjtec/wxkj-design-docs.git/issues"
   },
-  "homepage": "https://github.com/Dm-China/wx-design-docs#readme",
+  "homepage": "https://github.com/wxkjtec/wxkj-design-docs.git#readme",
   "dependencies": {
     "echarts": "^5.4.1",
     "element-ui": "^2.15.13",
     "vuepress-plugin-demo-container": "^0.2.0",
-    "wx-design": "^0.1.7"
+    "wx-design": "latest"
   },
   "devDependencies": {
+    "bumpp": "^9.1.0",
     "vuepress": "^1.9.7"
   }
 }

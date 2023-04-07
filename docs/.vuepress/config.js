@@ -11,6 +11,18 @@ module.exports = {
         src: "https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.min.js",
       },
     ],
+    [
+      "script",
+      {
+        src: "https://cdn.bootcdn.net/ajax/libs/axios/1.3.4/axios.js",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.bootcdn.net/ajax/libs/Mock.js/1.0.0/mock.js",
+      },
+    ],
   ],
   themeConfig: {
     // 顶部导航栏
@@ -51,7 +63,7 @@ module.exports = {
             },
             {
               title: "Table表格",
-              path: "/pages/element-ui/date-picker.md",
+              path: "/pages/element-ui/table.md",
             },
           ],
         },
@@ -66,8 +78,8 @@ module.exports = {
           title: "Vue 代码规范",
           collapsable: true,
           path: "/standard/code-lint.md",
-        }
-    ]
+        },
+      ],
     },
   },
   plugins: ["demo-container"], // 配置插件
