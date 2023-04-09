@@ -4,20 +4,23 @@
 
 ```html
 <template>
-  <wx-table
-    tableId="tableid"
-    size="mini"
-    background
-    border
-    index
-    :columns="columns"
-    :data="tableData"
-    :pagination="pagination"
-    :loading="loading"
-    paginationAlign="center"
-    @paginationChange="onPaginationChange"
-    @onRefreshTable="onRefreshTable"
-  />
+  <div style="height: 600px">
+    <wx-table
+      tableId="tableid"
+      size="mini"
+      background
+      isCanResizeParent
+      border
+      index
+      :columns="columns"
+      :data="tableData"
+      :pagination="pagination"
+      :loading="loading"
+      paginationAlign="center"
+      @paginationChange="onPaginationChange"
+      @onRefreshTable="onRefreshTable"
+    />
+  </div>
 </template>
 <script>
   export default {
@@ -38,11 +41,29 @@
           {
             label: "头像",
             prop: "avatar",
+            render: (h, { row }) => {
+              return h("el-image", {
+                props: {
+                  src: row.avatar,
+                  "preview-src-list": [row.avatar],
+                },
+                style: {
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "50%",
+                },
+              });
+            },
             show: true,
           },
           {
             label: "姓名",
             prop: "name",
+            show: true,
+          },
+          {
+            label: "年龄",
+            prop: "age",
             show: true,
           },
           {
@@ -67,7 +88,7 @@
       fetchData() {
         const { pageSize, pageNum } = this.pagination;
         this.loading = true;
-        axios("/api/page", {
+        this.$axios("/api/page", {
           method: "post",
           data: {
             pageSize: pageSize || 10,
@@ -117,8 +138,7 @@
 | hasToolsBox        | 是否显示工具箱                               | boolean  | -                   | true                                                         |
 | loading            | 是否加载中状态                               | boolean  | —                   | false                                                        |
 | loadingText        | loading 状态的文本内容                       | string   | —                   | 加载中...                                                    |
-| loadingTextColor   | loading 文本的颜色                           | string   | —                   | #444                                                         |
-| loadingColor       | loading 图标的颜色                           | string   | —                   | #3275F7                                                      |
+| loadingIcon        | loading 图标                                 | string   | —                   | el-icon-loading                                              |
 | loadingMaskColor   | loading 遮罩的颜色                           | string   | —                   | rgba(0, 0, 0, 0.01)                                          |
 | expand             | 是否可展开                                   | boolean  | -                   | false                                                        |
 | index              | 是否显示索引                                 | boolean  | -                   | true                                                         |

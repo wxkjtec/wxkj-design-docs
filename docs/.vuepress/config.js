@@ -4,6 +4,12 @@ module.exports = {
   description: "提供更接近业务场景的组件",
   base: "/",
   port: "8099",
+  configureWebpack: {
+    node: {
+      global: true,
+      process: true,
+    },
+  },
   head: [
     [
       "script",
@@ -21,6 +27,12 @@ module.exports = {
       "script",
       {
         src: "https://cdn.bootcdn.net/ajax/libs/Mock.js/1.0.0/mock.js",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "/js/mock.js",
       },
     ],
   ],
