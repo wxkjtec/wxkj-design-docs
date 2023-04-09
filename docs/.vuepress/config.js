@@ -2,7 +2,7 @@ module.exports = {
   theme: "",
   title: "wx-design",
   description: "提供更接近业务场景的组件",
-  base: "/",
+  base: "/wxkj-design-docs/",
   port: "8099",
   configureWebpack: {
     node: {
