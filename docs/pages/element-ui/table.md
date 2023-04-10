@@ -130,31 +130,32 @@
 
 <div class="special_table">
 
-| 参数               | 说明                                         | 类型     | 可选值              | 默认值                                                       |
-| ------------------ | -------------------------------------------- | -------- | ------------------- | ------------------------------------------------------------ |
-| tableId            | table 的唯一标识，用于保存表格设置的存储 key | string   | -                   | —                                                            |
-| isSaveTableSetting | 是否保存 table 设置                          | boolean  | -                   | true                                                         |
-| isCanResizeParent  | 继承父元素高度                               | boolean  |                     | true                                                         |
-| hasToolsBox        | 是否显示工具箱                               | boolean  | -                   | true                                                         |
-| loading            | 是否加载中状态                               | boolean  | —                   | false                                                        |
-| loadingText        | loading 状态的文本内容                       | string   | —                   | 加载中...                                                    |
-| loadingIcon        | loading 图标                                 | string   | —                   | el-icon-loading                                              |
-| loadingMaskColor   | loading 遮罩的颜色                           | string   | —                   | rgba(0, 0, 0, 0.01)                                          |
-| expand             | 是否可展开                                   | boolean  | -                   | false                                                        |
-| index              | 是否显示索引                                 | boolean  | -                   | true                                                         |
-| indexAlign         | 索引对齐方式                                 | string   | left, center, right | center                                                       |
-| indexColLabel      | 索引列名称                                   | string   | -                   | 索引                                                         |
-| indexColWidth      | 索引列宽度                                   | number   | -                   | 82                                                           |
-| selection          | 是否显示选择框                               | boolean  | -                   | false                                                        |
-| selectionColWidth  | 选择框所在列宽                               | number   | -                   | 82                                                           |
-| columns            | 列配置信息                                   | array    | -                   | []                                                           |
-| defaultSize        | 表格默认大小                                 | string   | medium, small, mini | medium                                                       |
-| fetchSetting       | 分页字段配置                                 | object   | -                   | pageField: pageNum , sizeField: pageSize , totalField: total |
-| pagination         | 分页参数                                     | object   | -                   | 字段值与 fetchSetting 一致                                   |
-| pageSizeOptions    | 每页显示个数选择器的选项设置                 | number[] | -                   | [10, 20, 30, 40, 50, 100]                                    |
-| defaultPageSize    | 每页显示默认个数                             | number   | -                   | 10                                                           |
-| paginationLayout   | 分页布局，名用逗号分隔                       | number   | -                   | total, sizes, prev, pager, next                              |
-| paginationAlign    | 分页对齐方式                                 | string   | left, center, right | right                                                        |
+| 参数               | 说明                                         | 类型     | 可选值              | 默认值                                                                             |
+| ------------------ | -------------------------------------------- | -------- | ------------------- | ---------------------------------------------------------------------------------- |
+| tableId            | table 的唯一标识，用于保存表格设置的存储 key | string   | -                   | —                                                                                  |
+| isSaveTableSetting | 是否保存 table 设置                          | boolean  | -                   | true                                                                               |
+| isCanResizeParent  | 继承父元素高度                               | boolean  |                     | true                                                                               |
+| hasToolsBox        | 是否显示工具箱                               | boolean  | -                   | true                                                                               |
+| loading            | 是否加载中状态                               | boolean  | —                   | false                                                                              |
+| loadingText        | loading 状态的文本内容                       | string   | —                   | 加载中...                                                                          |
+| loadingIcon        | loading 图标                                 | string   | —                   | el-icon-loading                                                                    |
+| loadingMaskColor   | loading 遮罩的颜色                           | string   | —                   | rgba(0, 0, 0, 0.01)                                                                |
+| expand             | 是否可展开                                   | boolean  | -                   | false                                                                              |
+| lineHeightSizes    | 表格密度选项设置                             | object   | -                   | [{label:"默认",size:"80px"},{label:"中等",size:"60px"},{label:"紧凑",size:"40px"}] |
+| index              | 是否显示索引                                 | boolean  | -                   | true                                                                               |
+| indexAlign         | 索引对齐方式                                 | string   | left, center, right | center                                                                             |
+| indexColLabel      | 索引列名称                                   | string   | -                   | 索引                                                                               |
+| indexColWidth      | 索引列宽度                                   | number   | -                   | 82                                                                                 |
+| selection          | 是否显示选择框                               | boolean  | -                   | false                                                                              |
+| selectionColWidth  | 选择框所在列宽                               | number   | -                   | 82                                                                                 |
+| columns            | 列配置信息                                   | array    | -                   | []                                                                                 |
+| defaultSize        | 表格默认大小                                 | string   | medium, small, mini | medium                                                                             |
+| fetchSetting       | 分页字段配置                                 | object   | -                   | pageField: pageNum , sizeField: pageSize , totalField: total                       |
+| pagination         | 分页参数                                     | object   | -                   | 字段值与 fetchSetting 一致                                                         |
+| pageSizeOptions    | 每页显示个数选择器的选项设置                 | number[] | -                   | [10, 20, 30, 40, 50, 100]                                                          |
+| defaultPageSize    | 每页显示默认个数                             | number   | -                   | 10                                                                                 |
+| paginationLayout   | 分页布局，名用逗号分隔                       | number   | -                   | total, sizes, prev, pager, next                                                    |
+| paginationAlign    | 分页对齐方式                                 | string   | left, center, right | right                                                                              |
 
 </div>
 
